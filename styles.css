@@ -8,6 +8,40 @@ html{
     padding: 0;
 
 }
+body{
+    margin-top: 0;
+}
+video{
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav {
+    margin: 20px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: #f3e1c8;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.link {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+.link:hover {
+    background-color: #e3b23c;
+    color: #fff;
+    box-shadow: 0px 0px 15px rgba(227, 178, 60, 0.8);
+}
 h1{
     text-align: center;
     color: #4A4A4A;
@@ -28,6 +62,19 @@ background-color: #ffffff;
 border-radius: 10px;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+main p {
+    font-size: 18px; 
+    line-height: 1.8; 
+    text-align: justify; 
+    margin-bottom: 15px; 
+}
+main ol{
+    padding-left: 20px;
+}
+main ol li {
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
 .dottes{
     margin: 1rem;
     max-width: 800px;
@@ -38,11 +85,28 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
     
 }
+.video-text{
+    text-align: center;
+    font-size: 18px;
+    color: #4A4A4A;
+}
 .dotters li{
     margin: 0.8rem 0;
     font-size: 1rem;
     list-style-type: disc;
     padding-left: 1.2rem;
+}
+.image-container{
+    display: flex; /* Вирівнювання в ряд */
+    gap: 10px; /* Відступ між фото */
+    justify-content: center; /* Центрування */
+    align-items: center; /* Вирівнювання по висоті */
+    flex-wrap: wrap; /* Щоб не виходило за межі екрану */
+}
+.image-container img {
+    width: 250px; /* Однаковий розмір */
+    height: 250px; /* Однакова висота */
+    object-fit: cover; /* Обрізка без спотворень */
 }
 .img{
     width: 250px;
@@ -69,6 +133,11 @@ footer ol {
 footer p {
     font-style: italic; /* Курсив для завершающего текста */
 }
+.place{
+    height: 600px;
+    background-color:#fdf4e3;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 16px; /* Уменьшим размер текста */
